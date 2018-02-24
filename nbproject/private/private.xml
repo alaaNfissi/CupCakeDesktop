@@ -3,7 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Alaa/Documents/NetBeansProjects/CupCakeDesktop/src/tn/esprit/cupcake/views/CupCake.java</file>
             <file>file:/C:/Users/Alaa/Documents/NetBeansProjects/CupCakeDesktop/src/tn/esprit/cupcake/entities/Utilisateur.java</file>
+            <file>file:/C:/Users/Alaa/Documents/NetBeansProjects/CupCakeDesktop/src/tn/esprit/cupcake/services/CommandeService.java</file>
+            <file>file:/C:/Users/Alaa/Documents/NetBeansProjects/CupCakeDesktop/src/tn/esprit/cupcake/controllers/PanierajouterController.java</file>
+            <file>file:/C:/Users/Alaa/Documents/NetBeansProjects/CupCakeDesktop/src/tn/esprit/cupcake/entities/Commande.java</file>
+            <file>file:/C:/Users/Alaa/Documents/NetBeansProjects/CupCakeDesktop/src/tn/esprit/cupcake/controllers/CommandeFXMLController.java</file>
+            <file>file:/C:/Users/Alaa/Documents/NetBeansProjects/CupCakeDesktop/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/Alaa/Documents/NetBeansProjects/CupCakeDesktop/src/tn/esprit/cupcake/entities/Patissier.java</file>
         </group>
     </open-files>
 </project-private>

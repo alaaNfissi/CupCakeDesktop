@@ -151,27 +151,27 @@ int idProduit = pn.RecupProduitId(selectedProduit);
 		alert.setContentText("Choose your option.");
 
 		ButtonType buttonTypeOne = new ButtonType("à la livraison");
-		ButtonType buttonTypeTwo = new ButtonType("En ligne");
+		/*ButtonType buttonTypeTwo = new ButtonType("En ligne");*/
 		ButtonType buttonTypeCancel = new ButtonType("Cancel", ButtonData.CANCEL_CLOSE);
 
-		alert.getButtonTypes().setAll(buttonTypeOne, buttonTypeTwo, buttonTypeCancel);
+		alert.getButtonTypes().setAll(buttonTypeOne,/* buttonTypeTwo,*/ buttonTypeCancel);
 
 		Optional<ButtonType> result = alert.showAndWait();
 		if (result.get() == buttonTypeOne){
 			System.out.println("à la livraison");
 			CommandeService cs = new CommandeService();
 			System.out.println("**********************************************");
-			cs.ajouterCommande(ps.searchById(1), us.searchUserById(12));
+			cs.ajouterCommande(ps.searchById(5), us.searchUserById(12));
 			Parent root = FXMLLoader.load(getClass().getResource("/tn/esprit/cupcake/views/CommandeFXML.fxml"));
                         Scene newScene= new Scene(root);
                         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
                         window.setScene(newScene);
                         window.show();
-		} else if (result.get() == buttonTypeTwo) {
+		} /*else if (result.get() == buttonTypeTwo) {
 			System.out.println("En ligne");
-		} else {
+		}*/ else {
 			Alert alert1 = new Alert(AlertType.ERROR);
-			alert1.setTitle("Info !");
+			alert1.setTitle("Alert !");
 			alert1.setHeaderText("Pas de choix selectionné");
 			alert1.setContentText("Vous devez choisir un mode de payement !");
 
