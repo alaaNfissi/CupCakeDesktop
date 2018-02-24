@@ -21,7 +21,11 @@ public class Utilisateur {
     private String date_naissance ;
     private int role ;
 	/****************************************** tesssssssssssssst ******************/
+<<<<<<< HEAD
     /****************** Rahma ***********************************/
+=======
+    /************ souhaa ************************/
+>>>>>>> e65fb967127f201ae3cadf882d30c418c9364014
 
     public Utilisateur() {
     }
