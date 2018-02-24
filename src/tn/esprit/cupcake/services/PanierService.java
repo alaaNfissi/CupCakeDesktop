@@ -229,4 +229,6 @@ public class PanierService {
 		}
 		return listeProduits;
 	}
+	
+	
 }

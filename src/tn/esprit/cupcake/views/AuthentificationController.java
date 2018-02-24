@@ -75,6 +75,7 @@ public class AuthentificationController implements Initializable {
 	}
 	@FXML
 	public void SeConnecter(ActionEvent event) throws IOException, SQLException {
+		if(validateInputs()){
 		UtilisateurService us = new UtilisateurService();
 		String pseudo = pseudoTextField.getText();
 		String password = passwordTexField.getText();
@@ -136,7 +137,7 @@ public class AuthentificationController implements Initializable {
             alert.setContentText("Votre authentification a été faite avec succès ;) ");
             alert.showAndWait();
 		}
-		
+		}
 	}
 	
 	public void seConnecterAvecFacebook(ActionEvent event) throws UnsupportedEncodingException, SQLException, IOException{
@@ -260,5 +261,24 @@ public class AuthentificationController implements Initializable {
 		}
 	}
 	
-	
+	private boolean validateInputs() {
+        if (pseudoTextField.getText().isEmpty()) {
+            Alert alert1 = new Alert(Alert.AlertType.WARNING);
+            alert1.setTitle("Erreur");
+            alert1.setContentText("Veillez saisir votre Pseudo");
+            alert1.setHeaderText(null);
+            alert1.show();
+            return false;
+        }
+		if(passwordTexField.getText().isEmpty())
+		{
+			Alert alert1 = new Alert(Alert.AlertType.WARNING);
+            alert1.setTitle("Erreur");
+            alert1.setContentText("Veillez saisir votre Password");
+            alert1.setHeaderText(null);
+            alert1.show();
+            return false;
+		}
+        return true;
+    }
 }
