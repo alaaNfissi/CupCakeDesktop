@@ -20,7 +20,7 @@ public class CupCake extends Application {
 	public static  Patisserie patisserie =null;
     @Override
     public void start(Stage stage) throws IOException{
-           Parent root = FXMLLoader.load(getClass().getResource("/tn/esprit/cupcake/views/Panierajouter.fxml"));
+           Parent root = FXMLLoader.load(getClass().getResource("/tn/esprit/cupcake/views/Authentification.fxml"));
         Scene scene = new Scene(root);
         URL url = this.getClass().getResource("/tn/esprit/cupcake/views/bootstrap3.css");
         if (url == null) {

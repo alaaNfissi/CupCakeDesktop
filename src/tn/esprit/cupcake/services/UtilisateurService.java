@@ -113,7 +113,7 @@ public class UtilisateurService {
 		while(rs.next()) 
 			{
 				u=new Utilisateur();
-				u.setId_utilisateur(rs.getInt("id_utilisateur"));
+				u.setId_utilisateur(rs.getLong("id_utilisateur"));
 				u.setPassword(rs.getString("password"));
 				u.setEmail(rs.getString("email"));
 				u.setPseudo(rs.getString("pseudo"));

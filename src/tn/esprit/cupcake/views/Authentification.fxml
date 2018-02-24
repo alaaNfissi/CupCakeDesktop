@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="484.0" style="-fx-background-color: #a2b04e;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.cupcake.views.AuthentificationController">
+   <children>
+      <ImageView fitHeight="377.0" fitWidth="484.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/loginBg.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="pseudoTextField" layoutX="53.0" layoutY="169.0" prefHeight="59.0" prefWidth="378.0" />
+      <PasswordField fx:id="passwordTexField" layoutX="54.0" layoutY="256.0" prefHeight="59.0" prefWidth="378.0" />
+      <Button fx:id="seConnecterButton" layoutX="55.0" layoutY="364.0" mnemonicParsing="false" onAction="#SeConnecter" prefHeight="59.0" prefWidth="378.0" text="Se Connecter" />
+      <Button fx:id="facebookButton" layoutX="55.0" layoutY="453.0" mnemonicParsing="false" onAction="#seConnecterAvecFacebook" prefHeight="59.0" prefWidth="378.0" style="-fx-background-color: #4267b2;" text="Se Connecter Avec Facebook" textFill="WHITE" />
+      <Label layoutX="55.0" layoutY="140.0" text="Pseudo" />
+      <Label layoutX="55.0" layoutY="235.0" text="Mot de passe" />
+      <Label layoutX="328.0" layoutY="581.0" text="© Creér par BlackPearl" />
+      <Label fx:id="message" layoutX="92.0" layoutY="14.0" prefHeight="102.0" prefWidth="300.0" />
+   </children>
+</AnchorPane>
